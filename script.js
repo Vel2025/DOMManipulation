@@ -9,15 +9,11 @@ var menuLinks = [
     { text: 'account', href: '/account' },
   ];
 
-const mainEl = document.querySelector("main");
+let mainEl = document.querySelector("main");
 mainEl.style.backgroundColor = "var(--main-bg)";
+mainEl.innerHTML = `<h1> DOM Manipulation</h1>`
+mainEl.classList.add(`flex-ctr`);
 
-const h1 = document.createElement("h1");
-h1.textContent = "DOM Manipulation";
-h1.style.textAlign = "center";
-h1.style.color = "white";
-mainEl.append(h1);
-h1.classList.add("flex-ctr");
 
 //Part-2
 const topMenuEl = document.getElementById("top-menu");
